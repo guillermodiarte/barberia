@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-slate-900 text-white;
+    font-family: 'Inter', sans-serif;
+}
+
+.font-heading {
+    font-family: 'Oswald', sans-serif;
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, #f59e0b, #d97706, #92400e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.barber-pattern {
+    background-image: repeating-linear-gradient(
+        45deg,
+        #1e293b 0px,
+        #1e293b 10px,
+        #334155 10px,
+        #334155 20px
+    );
+}
+
+.glass-effect {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
